@@ -104,6 +104,23 @@ body::before {
     font-size: 0.95rem;
 }
 
+.nav-logo-img {
+    height: 40px;
+    width: auto;
+    object-fit: contain;
+
+    filter: brightness(0) invert(1);
+    transition: filter 0.3s ease, opacity 0.3s ease;
+}
+
+.navbar.scrolled .nav-logo-img {
+    height: 26px;
+}
+
+.nav-logo-img:hover {
+    filter: brightness(0) invert(1) drop-shadow(0 0 6px rgba(196, 181, 253, 0.8)) drop-shadow(0 0 12px rgba(124, 58, 237, 0.5));
+}
+
 .nav-center {
     position: absolute;
     left: 50%;
