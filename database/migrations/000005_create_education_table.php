@@ -4,15 +4,20 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-return new class extends Migration
-{
+return new class extends Migration {
     /**
      * Run the migrations.
      */
     public function up(): void
     {
-        Schema::create('education', function (Blueprint $table) {
+        Schema::create('educations', function (Blueprint $table) {
             $table->id();
+            $table->string('school');
+            $table->string('major');
+            $table->string('degree');
+            $table->year('start_year');
+            $table->year('end_year')->nullable();
+            $table->text('description')->nullable();
             $table->timestamps();
         });
     }
