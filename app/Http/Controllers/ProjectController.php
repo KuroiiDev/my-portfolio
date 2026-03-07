@@ -13,7 +13,62 @@ class ProjectController extends Controller
      */
     public function index()
     {
-        //
+        // $projects = Project::with('techstacks')->latest()->get();
+        // $techstacks = Techstack::orderBy('name')->get();
+
+        $projects = collect([
+            (object) [
+                'id' => 1,
+                'title' => 'Portfolio Website',
+                'description' => 'A responsive portfolio website built with Laravel and Vue.js',
+                'image' => null,
+                'techstacks' => collect([
+                    (object) ['id' => 1, 'name' => 'Laravel'],
+                    (object) ['id' => 2, 'name' => 'Vue.js'],
+                    (object) ['id' => 3, 'name' => 'Tailwind CSS'],
+                ]),
+                'github_url' => 'https://github.com/user/portfolio',
+                'live_url' => 'https://portfolio.com',
+            ],
+            (object) [
+                'id' => 2,
+                'title' => 'E-commerce Platform',
+                'description' => 'Full-featured e-commerce application with payment integration',
+                'image' => null,
+                'techstacks' => collect([
+                    (object) ['id' => 1, 'name' => 'Laravel'],
+                    (object) ['id' => 4, 'name' => 'React'],
+                    (object) ['id' => 5, 'name' => 'Stripe'],
+                ]),
+                'github_url' => 'https://github.com/user/ecommerce',
+                'live_url' => null, // test nullable
+            ],
+            (object) [
+                'id' => 3,
+                'title' => 'Task Management App',
+                'description' => 'Collaborative task management tool with real-time updates',
+                'image' => null,
+                'techstacks' => collect([
+                    (object) ['id' => 6, 'name' => 'PHP'],
+                    (object) ['id' => 2, 'name' => 'Vue.js'],
+                    (object) ['id' => 7, 'name' => 'WebSocket'],
+                ]),
+                'github_url' => null, // test nullable
+                'live_url' => 'https://tasks.com',
+            ],
+        ]);
+
+        $techstacks = collect([
+            (object) ['id' => 1, 'name' => 'Laravel'],
+            (object) ['id' => 2, 'name' => 'Vue.js'],
+            (object) ['id' => 3, 'name' => 'Tailwind CSS'],
+            (object) ['id' => 4, 'name' => 'React'],
+            (object) ['id' => 5, 'name' => 'Stripe'],
+            (object) ['id' => 6, 'name' => 'PHP'],
+            (object) ['id' => 7, 'name' => 'WebSocket'],
+        ]);
+
+        return view('project', compact('projects', 'techstacks'));
     }
 
     /**

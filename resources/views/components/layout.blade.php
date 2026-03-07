@@ -22,22 +22,22 @@
         </a>
 
         <div class="nav-center">
-            <a href="#"
+            <a href="{{ route('home') }}"
                class="nav-link {{ request()->routeIs('home') ? 'active' : '' }}">
                 Home
             </a>
-            <a href="#"
+            <a href="{{ route('about') }}"
                class="nav-link {{ request()->routeIs('about') ? 'active' : '' }}">
                 About
             </a>
-            <a href="#"
+            <a href="{{ route('projects') }}"
                class="nav-link {{ request()->routeIs('projects') ? 'active' : '' }}">
                 Projects
             </a>
         </div>
 
         {{-- Contact CTA --}}
-        <a href="#"
+        <a href="{{ route('contact') }}"
            class="nav-link nav-cta nav-cta-desktop {{ request()->routeIs('contact') ? 'active' : '' }}">
             Contact
         </a>
@@ -53,10 +53,10 @@
 
     {{-- Mobile nav --}}
     <div class="mobile-nav" id="mobileNav">
-        <a href="#"    class="{{ request()->routeIs('home')     ? 'active' : '' }}">Home</a>
-        <a href="#"   class="{{ request()->routeIs('about')    ? 'active' : '' }}">About</a>
-        <a href="#" class="{{ request()->routeIs('projects') ? 'active' : '' }}">Projects</a>
-        <a href="#" class="{{ request()->routeIs('contact')  ? 'active' : '' }}">Contact</a>
+        <a href="{{ route('home') }}"    class="{{ request()->routeIs('home')     ? 'active' : '' }}">Home</a>
+        <a href="{{ route('about') }}"   class="{{ request()->routeIs('about')    ? 'active' : '' }}">About</a>
+        <a href="{{ route('projects') }}" class="{{ request()->routeIs('projects') ? 'active' : '' }}">Projects</a>
+        <a href="{{ route('contact') }}"  class="{{ request()->routeIs('contact')  ? 'active' : '' }}">Contact</a>
     </div>
 
     <main class="main-content">
