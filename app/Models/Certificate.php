@@ -7,6 +7,19 @@ use Illuminate\Database\Eloquent\Model;
 
 class Certificate extends Model
 {
-    /** @use HasFactory<\Database\Factories\CertificateFactory> */
     use HasFactory;
+    
+    protected $fillable = [
+        'title',
+        'issuer',
+        'issued_date',
+        'expiry_date',
+        'credential_url',
+        'image',
+    ];
+
+    protected $casts = [
+        'issued_date' => 'date',
+        'expiry_date' => 'date',
+    ];
 }

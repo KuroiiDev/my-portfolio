@@ -7,6 +7,12 @@ use Illuminate\Database\Eloquent\Model;
 
 class Skill extends Model
 {
-    /** @use HasFactory<\Database\Factories\SkillFactory> */
     use HasFactory;
+    
+    protected $fillable = [
+        'name',
+        'category',
+        'icon',
+        'level',
+    ];
 }

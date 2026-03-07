@@ -7,6 +7,16 @@ use Illuminate\Database\Eloquent\Model;
 
 class Education extends Model
 {
-    /** @use HasFactory<\Database\Factories\EducationFactory> */
     use HasFactory;
+    
+    protected $table = 'educations'; // ← tambah ini
+
+    protected $fillable = [
+        'school',
+        'major',
+        'degree',
+        'start_year',
+        'end_year',
+        'description',
+    ];
 }

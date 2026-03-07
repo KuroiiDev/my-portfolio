@@ -141,7 +141,7 @@
             </div>
 
             <div class="projects-grid">
-                {{-- @forelse($featuredProjects as $project)
+                @forelse($featuredProjects as $project)
                 <a href="{{ route('projects') }}" class="project-card">
                     <div class="project-thumb">
                         @if($project->image)
@@ -162,67 +162,6 @@
                 </a>
                 @empty
                 <p style="color:var(--text-muted);font-size:0.875rem;">No featured projects yet.</p>
-                @endforelse --}}
-
-                {{-- Placeholder Cards --}}
-                @php
-                    $featuredProjects = [
-                        (object) [
-                            'title' => 'E-Commerce Platform',
-                            'description' => 'A full-stack e-commerce solution with product catalog, cart management, and payment integration.',
-                            'image' => null,
-                            'techstacks' => collect([
-                                (object) ['name' => 'Laravel'],
-                                (object) ['name' => 'Vue.js'],
-                                (object) ['name' => 'MySQL'],
-                                (object) ['name' => 'Stripe'],
-                            ]),
-                        ],
-                        (object) [
-                            'title' => 'Task Management App',
-                            'description' => 'Collaborative task management tool with real-time updates and team collaboration features.',
-                            'image' => null,
-                            'techstacks' => collect([
-                                (object) ['name' => 'React'],
-                                (object) ['name' => 'Node.js'],
-                                (object) ['name' => 'MongoDB'],
-                                (object) ['name' => 'Socket.io'],
-                            ]),
-                        ],
-                        (object) [
-                            'title' => 'Portfolio Website',
-                            'description' => 'Modern responsive portfolio showcasing projects with smooth animations and dark mode support.',
-                            'image' => null,
-                            'techstacks' => collect([
-                                (object) ['name' => 'Laravel'],
-                                (object) ['name' => 'Blade'],
-                                (object) ['name' => 'Tailwind'],
-                                (object) ['name' => 'Alpine.js'],
-                            ]),
-                        ],
-                    ];
-                @endphp
-                @forelse($featuredProjects as $project)
-                    <a href="#" class="project-card">
-                        <div class="project-thumb">
-                            @if($project->image)
-                                <img src="{{ asset('storage/' . $project->image) }}" alt="{{ $project->title }}" />
-                            @else
-                                <div class="project-thumb-placeholder">⬡</div>
-                            @endif
-                        </div>
-                        <div class="project-body">
-                            <h3 class="project-title">{{ $project->title }}</h3>
-                            <p class="project-desc">{{ Str::limit($project->description, 100) }}</p>
-                            <div class="project-tags">
-                                @foreach($project->techstacks->take(4) as $tech)
-                                    <span class="tag">{{ $tech->name }}</span>
-                                @endforeach
-                            </div>
-                        </div>
-                    </a>
-                @empty
-                    <p style="color:var(--text-muted);font-size:0.875rem;">No featured projects yet.</p>
                 @endforelse
             </div>
         </div>
