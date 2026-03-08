@@ -1,5 +1,3 @@
-{{-- resources/views/pages/projects.blade.php --}}
-
 @extends('components.layout')
 
 @section('title', 'Projects')
@@ -10,13 +8,11 @@
 
 @section('content')
 
-    {{-- Modal component --}}
     <x-project-modal />
 
     <section class="projects-section">
         <div class="container">
 
-            {{-- Header --}}
             <div class="projects-header">
                 <p class="section-label">My Work</p>
                 <h1 class="section-title">All <span>Projects</span></h1>
@@ -25,7 +21,6 @@
                 </p>
             </div>
 
-            {{-- Alpine filter wrapper --}}
             <div x-data="{
                                 active: 'All',
                                 projects: {{ Js::from($projects) }},
@@ -38,7 +33,6 @@
                                 }
                             }">
 
-                {{-- Filter pills --}}
                 <div class="filter-row">
                     <button class="filter-pill" :class="{ 'active': active === 'All' }" @click="active = 'All'">All</button>
 
@@ -48,7 +42,6 @@
                     </template>
                 </div>
 
-                {{-- Projects grid --}}
                 <div class="projects-grid">
                     <template x-for="project in filtered" :key="project.id">
                         <div class="project-card" x-transition:enter="transition ease-out duration-300"
@@ -61,7 +54,6 @@
                                             github_url:  project.github_url,
                                             live_url:    project.live_url,
                                         })">
-                            {{-- Thumbnail --}}
                             <div class="project-thumb">
                                 <template x-if="project.image">
                                     <img :src="'/storage/' + project.image" :alt="project.title" />
@@ -71,7 +63,6 @@
                                 </template>
                             </div>
 
-                            {{-- Body --}}
                             <div class="project-body">
                                 <h3 class="project-title" x-text="project.title"></h3>
                                 <p class="project-desc" x-text="project.description.substring(0, 100) + '...'"></p>
@@ -81,7 +72,6 @@
                                     </template>
                                 </div>
 
-                                {{-- Link indicators --}}
                                 <div class="project-links-indicator">
                                     <template x-if="project.github_url">
                                         <span class="link-dot t-soft">⌥ GitHub</span>
@@ -94,7 +84,6 @@
                         </div>
                     </template>
 
-                    {{-- Empty state --}}
                     <template x-if="filtered.length === 0">
                         <div class="projects-empty">
                             <span class="t-prompt">❯</span>

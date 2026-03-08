@@ -15,7 +15,7 @@
 
             <div class="hero-left">
                 <div class="fade-up">
-                    <span class="hero-eyebrow">Grinding Computer Engineer</span>
+                    <span class="hero-eyebrow">Playing College Life Simulator</span>
                 </div>
 
                 <h1 class="hero-name fade-up">
@@ -69,22 +69,22 @@
 
                         {{-- Logo ASCII art --}}
                         <pre class="ascii-art">
-                       ·<span class="t-muted">++·</span>      <span class="t-muted">:</span><span class="t-soft">=X=</span><span class="t-muted">·</span>                
-                        <span class="t-muted">;</span><span class="t-lilac">@@</span><span class="t-soft">x</span>    <span class="t-muted">;</span><span class="t-lilac">@█#</span><span class="t-muted">:</span>                 
-                       <span class="t-muted">;</span><span class="t-lilac">#@</span><span class="t-soft">x</span><span class="t-muted">:</span>     ·<span class="t-soft">x</span><span class="t-lilac">#@</span><span class="t-soft">=</span>                
-                  <span class="t-muted">::</span>·<span class="t-muted">:</span><span class="t-soft">X</span><span class="t-lilac">#</span><span class="t-soft">x</span>·         ·<span class="t-soft">x</span><span class="t-lilac">@#</span><span class="t-soft">=</span>·             
-                  <span class="t-muted">:</span><span class="t-lilac">#@@@</span><span class="t-soft">x</span><span class="t-muted">=</span><span class="t-soft">=xxXXXX$$$$$</span><span class="t-lilac">#██@</span><span class="t-soft">$</span><span class="t-muted">;</span>           
-                 <span class="t-muted">+</span><span class="t-soft">$</span><span class="t-lilac">&@██&</span><span class="t-soft">xx</span><span class="t-muted">=+;+</span><span class="t-lilac">#</span><span class="t-soft">$</span><span class="t-muted">:</span>··· <span class="t-soft">x</span><span class="t-lilac">███#&&</span><span class="t-soft">x</span><span class="t-muted">:</span>        
-              <span class="t-muted">;</span><span class="t-soft">x$X</span><span class="t-muted">;</span> <span class="t-soft">x</span><span class="t-lilac">██</span><span class="t-muted">+</span>     <span class="t-muted">+</span><span class="t-lilac">#</span><span class="t-soft">X</span><span class="t-muted">;;;</span><span class="t-soft">Xx</span><span class="t-muted">=</span><span class="t-lilac">██@</span>· <span class="t-muted">:</span><span class="t-soft">=$$=</span><span class="t-muted">:</span>     
-          ·<span class="t-muted">;</span><span class="t-soft">=Xx</span><span class="t-muted">;</span>    <span class="t-muted">;</span><span class="t-lilac">██</span><span class="t-muted">+</span>   <span class="t-muted">:</span><span class="t-soft">Xx</span>·<span class="t-muted">·</span>· <span class="t-muted">+</span><span class="t-lilac">@</span><span class="t-muted">++</span><span class="t-lilac">██</span><span class="t-soft">$</span>     ·<span class="t-muted">;</span><span class="t-soft">xxx</span><span class="t-muted">+·</span> 
-          <span class="t-muted">;;:</span>       ·<span class="t-lilac">@█</span><span class="t-muted">+</span> <span class="t-muted">:==</span>·    <span class="t-soft">x</span><span class="t-lilac">&</span><span class="t-muted">:</span> <span class="t-muted">;</span><span class="t-lilac">██</span><span class="t-muted">+</span>         ·<span class="t-muted">::</span> 
-                     <span class="t-lilac">#█</span><span class="t-muted">+</span> ·     <span class="t-muted">+</span><span class="t-soft">$=</span>   <span class="t-muted">+</span><span class="t-lilac">█@</span>·             
-                     <span class="t-lilac">#█</span><span class="t-soft">=</span>     <span class="t-muted">;</span><span class="t-soft">x</span><span class="t-muted">=</span>     <span class="t-soft">$</span><span class="t-lilac">█@</span><span class="t-muted">:</span>             
-                     <span class="t-lilac">#█</span><span class="t-soft">$</span><span class="t-muted">;;+</span><span class="t-soft">X</span><span class="t-lilac">&</span><span class="t-soft">$x=xxXXX</span><span class="t-lilac">███</span><span class="t-soft">X</span><span class="t-muted">:</span>            
-                     <span class="t-lilac">#█#</span><span class="t-soft">$$$XXXXxxxxxxxxxX</span><span class="t-muted">;</span>            
-                     <span class="t-soft">X</span><span class="t-lilac">@</span><span class="t-soft">X</span>                              
-                      <span class="t-muted">·</span>                               
-                    </pre>
+                                   ·<span class="t-muted">++·</span>      <span class="t-muted">:</span><span class="t-soft">=X=</span><span class="t-muted">·</span>                
+                                    <span class="t-muted">;</span><span class="t-lilac">@@</span><span class="t-soft">x</span>    <span class="t-muted">;</span><span class="t-lilac">@█#</span><span class="t-muted">:</span>                 
+                                   <span class="t-muted">;</span><span class="t-lilac">#@</span><span class="t-soft">x</span><span class="t-muted">:</span>     ·<span class="t-soft">x</span><span class="t-lilac">#@</span><span class="t-soft">=</span>                
+                              <span class="t-muted">::</span>·<span class="t-muted">:</span><span class="t-soft">X</span><span class="t-lilac">#</span><span class="t-soft">x</span>·         ·<span class="t-soft">x</span><span class="t-lilac">@#</span><span class="t-soft">=</span>·             
+                              <span class="t-muted">:</span><span class="t-lilac">#@@@</span><span class="t-soft">x</span><span class="t-muted">=</span><span class="t-soft">=xxXXXX$$$$$</span><span class="t-lilac">#██@</span><span class="t-soft">$</span><span class="t-muted">;</span>           
+                             <span class="t-muted">+</span><span class="t-soft">$</span><span class="t-lilac">&@██&</span><span class="t-soft">xx</span><span class="t-muted">=+;+</span><span class="t-lilac">#</span><span class="t-soft">$</span><span class="t-muted">:</span>··· <span class="t-soft">x</span><span class="t-lilac">███#&&</span><span class="t-soft">x</span><span class="t-muted">:</span>        
+                          <span class="t-muted">;</span><span class="t-soft">x$X</span><span class="t-muted">;</span> <span class="t-soft">x</span><span class="t-lilac">██</span><span class="t-muted">+</span>     <span class="t-muted">+</span><span class="t-lilac">#</span><span class="t-soft">X</span><span class="t-muted">;;;</span><span class="t-soft">Xx</span><span class="t-muted">=</span><span class="t-lilac">██@</span>· <span class="t-muted">:</span><span class="t-soft">=$$=</span><span class="t-muted">:</span>     
+                      ·<span class="t-muted">;</span><span class="t-soft">=Xx</span><span class="t-muted">;</span>    <span class="t-muted">;</span><span class="t-lilac">██</span><span class="t-muted">+</span>   <span class="t-muted">:</span><span class="t-soft">Xx</span>·<span class="t-muted">·</span>· <span class="t-muted">+</span><span class="t-lilac">@</span><span class="t-muted">++</span><span class="t-lilac">██</span><span class="t-soft">$</span>     ·<span class="t-muted">;</span><span class="t-soft">xxx</span><span class="t-muted">+·</span> 
+                      <span class="t-muted">;;:</span>       ·<span class="t-lilac">@█</span><span class="t-muted">+</span> <span class="t-muted">:==</span>·    <span class="t-soft">x</span><span class="t-lilac">&</span><span class="t-muted">:</span> <span class="t-muted">;</span><span class="t-lilac">██</span><span class="t-muted">+</span>         ·<span class="t-muted">::</span> 
+                                 <span class="t-lilac">#█</span><span class="t-muted">+</span> ·     <span class="t-muted">+</span><span class="t-soft">$=</span>   <span class="t-muted">+</span><span class="t-lilac">█@</span>·             
+                                 <span class="t-lilac">#█</span><span class="t-soft">=</span>     <span class="t-muted">;</span><span class="t-soft">x</span><span class="t-muted">=</span>     <span class="t-soft">$</span><span class="t-lilac">█@</span><span class="t-muted">:</span>             
+                                 <span class="t-lilac">#█</span><span class="t-soft">$</span><span class="t-muted">;;+</span><span class="t-soft">X</span><span class="t-lilac">&</span><span class="t-soft">$x=xxXXX</span><span class="t-lilac">███</span><span class="t-soft">X</span><span class="t-muted">:</span>            
+                                 <span class="t-lilac">#█#</span><span class="t-soft">$$$XXXXxxxxxxxxxX</span><span class="t-muted">;</span>            
+                                 <span class="t-soft">X</span><span class="t-lilac">@</span><span class="t-soft">X</span>                              
+                                  <span class="t-muted">·</span>                               
+                                </pre>
                         {{-- End of ASCII art --}}
 
                         <div class="terminal-line mt-2">
@@ -127,6 +127,24 @@
         </div>
     </section>
 
+    <section class="section" style="padding-top:0">
+        <div class="container">
+            <p class="section-label">Tech Stack</p>
+            <h2 class="section-title">Tools I <span>Work With</span></h2>
+
+            <div class="skills-row">
+                @foreach($skills as $skill)
+                    <span class="skill-pill">
+                        @if($skill->icon)
+                            <img src="{{ asset('storage/' . $skill->icon) }}" width="14" height="14" alt="" />
+                        @endif
+                        {{ $skill->name }}
+                    </span>
+                @endforeach
+            </div>
+        </div>
+    </section>
+
     <section class="section">
         <div class="container">
             <p class="section-label">Selected Work</p>
@@ -142,67 +160,27 @@
 
             <div class="projects-grid">
                 @forelse($featuredProjects as $project)
-                <a href="{{ route('projects') }}" class="project-card">
-                    <div class="project-thumb">
-                        @if($project->image)
-                        <img src="{{ asset('storage/' . $project->image) }}" alt="{{ $project->title }}" />
-                        @else
-                        <div class="project-thumb-placeholder">⬡</div>
-                        @endif
-                    </div>
-                    <div class="project-body">
-                        <h3 class="project-title">{{ $project->title }}</h3>
-                        <p class="project-desc">{{ Str::limit($project->description, 100) }}</p>
-                        <div class="project-tags">
-                            @foreach($project->techstacks->take(4) as $tech)
-                            <span class="tag">{{ $tech->name }}</span>
-                            @endforeach
+                    <a class="project-card">
+                        <div class="project-thumb">
+                            @if($project->image)
+                                <img src="{{ asset('storage/' . $project->image) }}" alt="{{ $project->title }}" />
+                            @else
+                                <div class="project-thumb-placeholder">⬡</div>
+                            @endif
                         </div>
-                    </div>
-                </a>
+                        <div class="project-body">
+                            <h3 class="project-title">{{ $project->title }}</h3>
+                            <p class="project-desc">{{ Str::limit($project->description, 100) }}</p>
+                            <div class="project-tags">
+                                @foreach($project->techstacks->take(4) as $tech)
+                                    <span class="tag">{{ $tech->name }}</span>
+                                @endforeach
+                            </div>
+                        </div>
+                    </a>
                 @empty
-                <p style="color:var(--text-muted);font-size:0.875rem;">No featured projects yet.</p>
+                    <p style="color:var(--text-muted);font-size:0.875rem;">No featured projects yet.</p>
                 @endforelse
-            </div>
-        </div>
-    </section>
-
-    <section class="section" style="padding-top:0">
-        <div class="container">
-            <p class="section-label">Tech Stack</p>
-            <h2 class="section-title">Tools I <span>Work With</span></h2>
-
-            <div class="skills-row">
-                {{-- @foreach($skills as $skill)
-                <span class="skill-pill">
-                    @if($skill->icon)
-                    <img src="{{ asset('storage/' . $skill->icon) }}" width="14" height="14" alt="" />
-                    @endif
-                    {{ $skill->name }}
-                </span>
-                @endforeach --}}
-
-                {{-- Dummy data for now, replace with dynamic skills from DB later --}}
-                @php
-                    $skills = collect([
-                        (object) ['name' => 'Laravel', 'icon' => null],
-                        (object) ['name' => 'Vue.js', 'icon' => null],
-                        (object) ['name' => 'React', 'icon' => null],
-                        (object) ['name' => 'Node.js', 'icon' => null],
-                        (object) ['name' => 'MySQL', 'icon' => null],
-                        (object) ['name' => 'MongoDB', 'icon' => null],
-                        (object) ['name' => 'Tailwind CSS', 'icon' => null],
-                        (object) ['name' => 'Docker', 'icon' => null],
-                    ]);
-                @endphp
-                @foreach($skills as $skill)
-                    <span class="skill-pill">
-                        @if($skill->icon)
-                            <img src="{{ asset('storage/' . $skill->icon) }}" width="14" height="14" alt="" />
-                        @endif
-                        {{ $skill->name }}
-                    </span>
-                @endforeach
             </div>
         </div>
     </section>

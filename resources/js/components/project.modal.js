@@ -1,21 +1,15 @@
-// resources/js/components/project-modal.js
-
 const overlay = document.getElementById('projectModal');
 const terminal = document.getElementById('modalTerminal');
 
-// ── Open modal ─────────────────────────────────────────
 window.openProjectModal = function (project) {
-    // Terminal title
     document.getElementById('modalTerminalTitle').textContent =
         `~/projects/${project.slug ?? project.title.toLowerCase().replace(/\s+/g, '-')}.sh`;
     document.getElementById('modalCmdTitle').textContent =
         project.title.toLowerCase().replace(/\s+/g, '-');
 
-    // Title & description
     document.getElementById('modalTitle').textContent = project.title;
     document.getElementById('modalDesc').textContent = project.description;
 
-    // Thumbnail
     const img = document.getElementById('modalThumbImg');
     const placeholder = document.getElementById('modalThumbPlaceholder');
     if (project.image) {
@@ -27,7 +21,6 @@ window.openProjectModal = function (project) {
         placeholder.style.display = 'flex';
     }
 
-    // Techstack tags
     const tagsEl = document.getElementById('modalTags');
     tagsEl.innerHTML = '';
     (project.techstacks ?? []).forEach(tech => {
@@ -37,7 +30,6 @@ window.openProjectModal = function (project) {
         tagsEl.appendChild(span);
     });
 
-    // Action buttons — nullable
     const actionsEl = document.getElementById('modalActions');
     actionsEl.innerHTML = '';
 
@@ -64,23 +56,19 @@ window.openProjectModal = function (project) {
         }
     }
 
-    // Open
     overlay.classList.add('open');
     document.body.style.overflow = 'hidden';
 };
 
-// ── Close modal ────────────────────────────────────────
 window.closeProjectModal = function () {
     overlay.classList.remove('open');
     document.body.style.overflow = '';
 };
 
-// Close on overlay click (not on terminal itself)
 window.closeModal = function (e) {
     if (e.target === overlay) closeProjectModal();
 };
 
-// Close on ESC
 document.addEventListener('keydown', e => {
     if (e.key === 'Escape') closeProjectModal();
 });

@@ -36,13 +36,11 @@
             </a>
         </div>
 
-        {{-- Contact CTA --}}
         <a href="{{ route('contact') }}"
            class="nav-link nav-cta nav-cta-desktop {{ request()->routeIs('contact') ? 'active' : '' }}">
             Contact
         </a>
 
-        {{-- Mobile toggle --}}
         <div class="nav-toggle" id="navToggle">
             <span></span>
             <span></span>
@@ -51,7 +49,6 @@
 
     </nav>
 
-    {{-- Mobile nav --}}
     <div class="mobile-nav" id="mobileNav">
         <a href="{{ route('home') }}"    class="{{ request()->routeIs('home')     ? 'active' : '' }}">Home</a>
         <a href="{{ route('about') }}"   class="{{ request()->routeIs('about')    ? 'active' : '' }}">About</a>
@@ -65,12 +62,12 @@
 
     <footer class="footer container">
         <p class="footer-left">
-            Crafted with <span>♥</span> by <span>KuroiiDev</span> &mdash; {{ date('Y') }}
+            Crafted with <span>♥</span> by <span>KuroiiDev</span> &mdash; 2026
         </p>
         <div class="footer-links">
             <a href="https://github.com/KuroiiDev" target="_blank">GitHub</a>
             <a href="https://www.linkedin.com/in/maitsam-kadzim-12ba50301/" target="_blank">LinkedIn</a>
-            <a href="{{ route('resume') }}">Resume</a>
+            <a href="{{ route('cv') }}" target="_blank">CV</a>
         </div>
     </footer>
 
