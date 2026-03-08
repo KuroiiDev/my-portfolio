@@ -22,16 +22,16 @@
             </div>
 
             <div x-data="{
-                                active: 'All',
-                                projects: {{ Js::from($projects) }},
-                                techstacks: {{ Js::from($techstacks) }},
-                                get filtered() {
-                                    if (this.active === 'All') return this.projects;
-                                    return this.projects.filter(p =>
-                                        p.techstacks.some(t => t.name === this.active)
-                                    );
-                                }
-                            }">
+                                                    active: 'All',
+                                                    projects: {{ Js::from($projects) }},
+                                                    techstacks: {{ Js::from($techstacks) }},
+                                                    get filtered() {
+                                                        if (this.active === 'All') return this.projects;
+                                                        return this.projects.filter(p =>
+                                                            p.techstacks.some(t => t.name === this.active)
+                                                        );
+                                                    }
+                                                }">
 
                 <div class="filter-row">
                     <button class="filter-pill" :class="{ 'active': active === 'All' }" @click="active = 'All'">All</button>
@@ -47,16 +47,16 @@
                         <div class="project-card" x-transition:enter="transition ease-out duration-300"
                             x-transition:enter-start="opacity-0 translate-y-4"
                             x-transition:enter-end="opacity-100 translate-y-0" @click="openProjectModal({
-                                            title:       project.title,
-                                            description: project.description,
-                                            image:       project.image ? '/storage/' + project.image : null,
-                                            techstacks:  project.techstacks.map(t => t.name),
-                                            github_url:  project.github_url,
-                                            live_url:    project.live_url,
-                                        })">
+                                                                title:       project.title,
+                                                                description: project.description,
+                                                                image: project.image ? '{{ asset('storage') }}' + '/projects/' + project.image : null,
+                                                                techstacks:  project.techstacks.map(t => t.name),
+                                                                github_url:  project.github_url,
+                                                                live_url:    project.live_url,
+                                                            })">
                             <div class="project-thumb">
                                 <template x-if="project.image">
-                                    <img :src="'/storage/' + project.image" :alt="project.title" />
+                                    <img :src="'{{ asset('storage') }}'+ '/projects/' + project.image" :alt="project.title" />
                                 </template>
                                 <template x-if="!project.image">
                                     <div class="project-thumb-placeholder">⬡</div>

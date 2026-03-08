@@ -59,7 +59,7 @@
                 <div class="about-photo-frame">
                     <div class="photo-glow"></div>
                     <div class="photo-border-decoration"></div>
-                    <img src="{{ asset('images/proffile.jpg') }}" alt="Sam" class="about-photo" />
+                    <img src="{{ asset('images/profile.png') }}" alt="Sam" class="about-photo" />
                     <div class="photo-corner photo-corner-tl"></div>
                     <div class="photo-corner photo-corner-br"></div>
                 </div>

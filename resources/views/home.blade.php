@@ -33,14 +33,14 @@
                 </p>
 
                 <div class="hero-actions fade-up">
-                    <a href="#projects" class="btn-primary">
+                    <a href="{{ route('projects') }}" class="btn-primary">
                         View Projects
                         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                             stroke-width="2.5">
                             <path d="M5 12h14M12 5l7 7-7 7" />
                         </svg>
                     </a>
-                    <a href="#about" class="btn-secondary">About Me</a>
+                    <a href="{{ route('about') }}" class="btn-secondary">About Me</a>
                 </div>
 
                 <div class="hero-socials fade-up">
@@ -163,7 +163,7 @@
                     <a class="project-card">
                         <div class="project-thumb">
                             @if($project->image)
-                                <img src="{{ asset('storage/' . $project->image) }}" alt="{{ $project->title }}" />
+                                <img src="{{ asset('storage/projects/' . $project->image) }}" alt="{{ $project->title }}" />
                             @else
                                 <div class="project-thumb-placeholder">⬡</div>
                             @endif
