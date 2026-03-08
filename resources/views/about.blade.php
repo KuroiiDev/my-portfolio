@@ -1,5 +1,3 @@
-{{-- resources/views/pages/about.blade.php --}}
-
 @extends('components.layout')
 
 @section('title', 'About')
@@ -13,9 +11,8 @@
     <section class="about-hero">
         <div class="container about-hero-content">
 
-            {{-- Left: Bio --}}
             <div class="about-bio">
-                <p class="section-label">Who I Am</p>
+                <p class="section-label">Who I Am ?</p>
                 <h1 class="section-title">About <span>Me</span></h1>
 
                 <p class="about-desc">
@@ -58,12 +55,11 @@
                 </div>
             </div>
 
-            {{-- Right: Photo --}}
             <div class="about-photo-wrapper">
                 <div class="about-photo-frame">
                     <div class="photo-glow"></div>
                     <div class="photo-border-decoration"></div>
-                    <img src="{{ asset('images/photo.jpg') }}" alt="Sam" class="about-photo" />
+                    <img src="{{ asset('images/proffile.jpg') }}" alt="Sam" class="about-photo" />
                     <div class="photo-corner photo-corner-tl"></div>
                     <div class="photo-corner photo-corner-br"></div>
                 </div>
@@ -72,7 +68,6 @@
         </div>
     </section>
 
-    {{-- ═══ SKILLS ══════════════════════════════════════════ --}}
     <section class="about-section">
         <div class="container">
             <p class="section-label">What I Use</p>
@@ -108,7 +103,6 @@
         </div>
     </section>
 
-    {{-- ═══ EXPERIENCE ══════════════════════════════════════ --}}
     <section class="about-section">
         <div class="container">
             <p class="section-label">Where I've Worked</p>
@@ -135,7 +129,6 @@
                             <p class="info-card-desc">{{ $exp->description }}</p>
                         @endif
 
-                        {{-- Related projects --}}
                         @if($exp->projects->count())
                             <div class="info-card-projects">
                                 <span class="t-prompt" style="font-size:0.75rem">❯</span>
@@ -153,7 +146,6 @@
         </div>
     </section>
 
-    {{-- ═══ EDUCATION ═══════════════════════════════════════ --}}
     <section class="about-section">
         <div class="container">
             <p class="section-label">Where I Studied</p>
@@ -186,7 +178,6 @@
         </div>
     </section>
 
-    {{-- ═══ CERTIFICATES ════════════════════════════════════ --}}
     <section class="about-section" style="padding-bottom: 6rem">
         <div class="container">
             <p class="section-label">What I've Earned</p>

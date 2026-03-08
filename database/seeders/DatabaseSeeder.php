@@ -22,7 +22,7 @@ class DatabaseSeeder extends Seeder
         $techstacks = Techstack::factory(8)->create();
 
         // Education
-        Education::factory(1)->create();
+        Education::factory(2)->create();
 
         // Certificates
         Certificate::factory(4)->create();
