@@ -1,0 +1,269 @@
+/* resources/css/pages/contact.page.css */
+
+/* ─── Section ───────────────────────────────────────── */
+.contact-section {
+    padding: 5rem 0 6rem;
+    position: relative;
+    z-index: 1;
+}
+
+.contact-header {
+    margin-bottom: 3rem;
+}
+
+.contact-subtitle {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    margin-top: 0.5rem;
+    max-width: 440px;
+}
+
+/* ─── Grid ──────────────────────────────────────────── */
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 380px;
+    gap: 2rem;
+    align-items: start;
+}
+
+/* ─── Terminal card ─────────────────────────────────── */
+.terminal-card {
+    border-radius: 0.875rem;
+    border: 1px solid rgba(124, 58, 237, 0.2);
+    background: rgba(10, 8, 18, 0.85);
+    backdrop-filter: blur(12px);
+    overflow: hidden;
+    box-shadow:
+        0 0 0 1px rgba(196, 181, 253, 0.04),
+        0 24px 64px rgba(0, 0, 0, 0.4),
+        0 0 40px rgba(124, 58, 237, 0.06);
+}
+
+.terminal-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.75rem 1rem;
+    background: rgba(16, 13, 26, 0.9);
+    border-bottom: 1px solid rgba(124, 58, 237, 0.12);
+}
+
+.terminal-dots {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.dot { width: 10px; height: 10px; border-radius: 50%; }
+.dot-red    { background: #ff5f57; }
+.dot-yellow { background: #febc2e; }
+.dot-green  { background: #28c840; }
+
+.terminal-title {
+    font-size: 0.72rem;
+    color: var(--text-muted);
+    font-family: 'DM Mono', 'Fira Code', monospace;
+}
+
+.terminal-body {
+    padding: 1.5rem;
+    font-family: 'DM Mono', 'Fira Code', monospace;
+    font-size: 0.8rem;
+}
+
+.terminal-line { display: flex; align-items: center; }
+.terminal-output { padding-left: 1.25rem; }
+
+.t-prompt { color: var(--accent-soft); }
+.t-cmd    { color: var(--text-primary); }
+.t-lilac  { color: var(--accent-lilac); }
+.t-soft   { color: var(--accent-soft); }
+.t-muted  { color: var(--text-muted); font-size: 0.78rem; }
+.t-green  { color: #28c840; }
+
+/* ─── Form ──────────────────────────────────────────── */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.1rem;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.form-label {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.form-input {
+    background: rgba(16, 13, 26, 0.6);
+    border: 1px solid var(--border);
+    border-radius: 0.5rem;
+    padding: 0.65rem 0.875rem;
+    font-size: 0.85rem;
+    color: var(--text-primary);
+    font-family: 'DM Sans', sans-serif;
+    outline: none;
+    transition: all 0.25s ease;
+    width: 100%;
+}
+
+.form-input::placeholder { color: var(--text-muted); opacity: 0.6; }
+
+.form-input:focus {
+    border-color: rgba(124, 58, 237, 0.4);
+    background: rgba(16, 13, 26, 0.8);
+    box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.08),
+                0 0 16px rgba(124, 58, 237, 0.06);
+}
+
+.form-textarea {
+    resize: vertical;
+    min-height: 120px;
+    font-family: 'DM Sans', sans-serif;
+}
+
+/* ─── Submit button ─────────────────────────────────── */
+.btn-submit {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.75rem;
+    border-radius: 999px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--bg-primary);
+    background: var(--accent-lilac);
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 24px rgba(196, 181, 253, 0.2);
+    align-self: flex-start;
+    margin-top: 0.25rem;
+}
+
+.btn-submit:hover:not(:disabled) {
+    background: var(--accent-soft);
+    box-shadow: 0 0 40px rgba(196, 181, 253, 0.4);
+    transform: translateY(-1px);
+}
+
+.btn-submit:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+/* ─── Success state ─────────────────────────────────── */
+.form-success {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.btn-reset {
+    background: none;
+    border: none;
+    color: var(--accent-lilac);
+    font-family: 'DM Mono', monospace;
+    font-size: 0.78rem;
+    cursor: pointer;
+    padding: 0.75rem 0 0;
+    transition: text-shadow 0.2s ease;
+    text-align: left;
+}
+
+.btn-reset:hover {
+    text-shadow: 0 0 10px rgba(196, 181, 253, 0.7);
+}
+
+/* ─── Cursor ────────────────────────────────────────── */
+.typed-cursor {
+    display: inline-block;
+    width: 2px;
+    height: 1.1em;
+    background: var(--accent-lilac);
+    margin-left: 2px;
+    vertical-align: middle;
+    animation: blink 1s step-end infinite;
+    box-shadow: 0 0 8px rgba(196, 181, 253, 0.8);
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50%       { opacity: 0; }
+}
+
+/* ─── Contact info ──────────────────────────────────── */
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.contact-info-block {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 1rem;
+    padding: 1.25rem 1.5rem;
+    font-family: 'DM Mono', monospace;
+    font-size: 0.8rem;
+}
+
+.contact-info-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.875rem;
+    padding: 0.75rem 0;
+    border-bottom: 1px solid var(--border);
+}
+
+.contact-info-item:last-child { border-bottom: none; }
+
+.contact-info-icon {
+    font-size: 1rem;
+    color: var(--accent-soft);
+    margin-top: 0.1rem;
+    flex-shrink: 0;
+}
+
+.contact-info-label {
+    font-size: 0.7rem;
+    color: var(--text-muted);
+    margin-bottom: 0.2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
+.contact-info-value {
+    font-size: 0.82rem;
+    color: var(--text-primary);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.contact-info-value:hover { color: var(--accent-lilac); }
+
+/* ─── Responsive ────────────────────────────────────── */
+@media (max-width: 900px) {
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 560px) {
+    .form-row { grid-template-columns: 1fr; }
+}

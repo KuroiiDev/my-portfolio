@@ -70,7 +70,7 @@
         <div class="footer-links">
             <a href="https://github.com/KuroiiDev" target="_blank">GitHub</a>
             <a href="https://www.linkedin.com/in/maitsam-kadzim-12ba50301/" target="_blank">LinkedIn</a>
-            <a href="{{ route('resume') }}">Resume</a>
+            <a href="{{ route('cv') }}" target="_blank">CV</a>
         </div>
     </footer>
 
