@@ -49,14 +49,14 @@
                             x-transition:enter-end="opacity-100 translate-y-0" @click="openProjectModal({
                                                                 title:       project.title,
                                                                 description: project.description,
-                                                                image: project.image ? '{{ asset('storage') }}' + '/projects/' + project.image : null,
+                                                                image: project.image ? '{{ asset('images/projects/') }}'+ '/' + project.image : null,
                                                                 techstacks:  project.techstacks.map(t => t.name),
                                                                 github_url:  project.github_url,
                                                                 live_url:    project.live_url,
                                                             })">
                             <div class="project-thumb">
                                 <template x-if="project.image">
-                                    <img :src="'{{ asset('storage') }}'+ '/projects/' + project.image" :alt="project.title" />
+                                    <img :src="'{{ asset('images/projects/') }}' + '/' + project.image" :alt="project.title" />
                                 </template>
                                 <template x-if="!project.image">
                                     <div class="project-thumb-placeholder">⬡</div>
