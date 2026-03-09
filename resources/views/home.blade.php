@@ -163,7 +163,7 @@
                     <a class="project-card">
                         <div class="project-thumb">
                             @if($project->image)
-                                <img src="{{ asset('storage/projects/' . $project->image) }}" alt="{{ $project->title }}" />
+                                <img src="{{ asset('images/projects/' . $project->image) }}" alt="{{ $project->title }}" />
                             @else
                                 <div class="project-thumb-placeholder">⬡</div>
                             @endif
