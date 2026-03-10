@@ -1,22 +1,18 @@
 import './bootstrap';
 import '@hotwired/turbo';
-const modal = document.getElementById('turbo-loading');
-const dots = document.getElementById('turbo-dots');
-let dotsInterval;
-
 document.addEventListener('turbo:visit', () => {
-    modal.style.display = 'flex';
-    let count = 0;
-    dotsInterval = setInterval(() => {
-        count = (count + 1) % 4;
-        dots.textContent = '.'.repeat(count);
-    }, 300);
+    const bar = document.getElementById('turbo-progress');
+    bar.style.width = '70%';
+    bar.style.opacity = '1';
 });
 
 document.addEventListener('turbo:load', () => {
-    clearInterval(dotsInterval);
-    modal.style.display = 'none';
-    dots.textContent = '';
+    const bar = document.getElementById('turbo-progress');
+    bar.style.width = '100%';
+    setTimeout(() => {
+        bar.style.opacity = '0';
+        setTimeout(() => { bar.style.width = '0%'; }, 300);
+    }, 200);
 });
 import Alpine from 'alpinejs';
 window.Alpine = Alpine;

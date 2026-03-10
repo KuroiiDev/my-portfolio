@@ -9,43 +9,18 @@
     @vite(['resources/css/app.css', 'resources/css/layout.page.css', 'resources/js/app.js', 'resources/js/layout.page.js'])
     @stack('prefix')
 </head>
-<!-- Loading modal -->
-<div id="turbo-loading" style="
-    display: none;
+<!-- Loading bar -->
+<div id="turbo-progress" style="
     position: fixed;
-    inset: 0;
-    background: rgba(10, 8, 18, 0.7);
-    backdrop-filter: blur(4px);
+    top: 0; left: 0;
+    height: 2px;
+    width: 0%;
+    background: linear-gradient(90deg, #7c3aed, #c4b5fd);
+    box-shadow: 0 0 10px rgba(196, 181, 253, 0.7);
     z-index: 9999;
-    align-items: center;
-    justify-content: center;
-">
-    <div style="
-        background: #13101f;
-        border: 1px solid rgba(124, 58, 237, 0.3);
-        border-radius: 0.875rem;
-        padding: 1.5rem 2rem;
-        font-family: 'DM Mono', monospace;
-        font-size: 0.82rem;
-        box-shadow: 0 0 40px rgba(124, 58, 237, 0.15);
-        display: flex;
-        align-items: center;
-        gap: 0.75rem;
-    ">
-        <span style="color: #a78bfa;">❯</span>
-        <span style="color: #f1eeff;">loading</span>
-        <span id="turbo-dots" style="color: #6b6880;"></span>
-        <span style="
-            display: inline-block;
-            width: 2px;
-            height: 1em;
-            background: #c4b5fd;
-            animation: blink 1s step-end infinite;
-            box-shadow: 0 0 8px rgba(196,181,253,0.8);
-            vertical-align: middle;
-        "></span>
-    </div>
-</div>
+    transition: width 0.3s ease;
+    pointer-events: none;
+"></div>
 
 <body>
 
