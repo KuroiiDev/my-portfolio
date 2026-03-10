@@ -1,6 +1,6 @@
 {
   "resources/css/app.css": {
-    "file": "assets/app-CDDGO2yX.css",
+    "file": "assets/app-BLBGL8f2.css",
     "src": "resources/css/app.css",
     "isEntry": true,
     "name": "app",
@@ -8,10 +8,82 @@
       "app.css"
     ]
   },
+  "resources/css/components/project.modal.css": {
+    "file": "assets/project-DnUXSr7E.css",
+    "src": "resources/css/components/project.modal.css",
+    "isEntry": true,
+    "name": "project.modal",
+    "names": [
+      "project.css"
+    ]
+  },
+  "resources/css/layout.page.css": {
+    "file": "assets/layout-DBpcFLWg.css",
+    "src": "resources/css/layout.page.css",
+    "isEntry": true,
+    "name": "layout.page",
+    "names": [
+      "layout.css"
+    ]
+  },
+  "resources/css/pages/about.page.css": {
+    "file": "assets/about-J53dZysL.css",
+    "src": "resources/css/pages/about.page.css",
+    "isEntry": true,
+    "name": "about.page",
+    "names": [
+      "about.css"
+    ]
+  },
+  "resources/css/pages/contact.page.css": {
+    "file": "assets/contact-ICkVzzwp.css",
+    "src": "resources/css/pages/contact.page.css",
+    "isEntry": true,
+    "name": "contact.page",
+    "names": [
+      "contact.css"
+    ]
+  },
+  "resources/css/pages/home.page.css": {
+    "file": "assets/home-DCWTz0q6.css",
+    "src": "resources/css/pages/home.page.css",
+    "isEntry": true,
+    "name": "home.page",
+    "names": [
+      "home.css"
+    ]
+  },
+  "resources/css/pages/project.page.css": {
+    "file": "assets/project-gqY7mdlP.css",
+    "src": "resources/css/pages/project.page.css",
+    "isEntry": true,
+    "name": "project.page",
+    "names": [
+      "project.css"
+    ]
+  },
   "resources/js/app.js": {
     "file": "assets/app-BIJoUbyE.js",
     "name": "app",
     "src": "resources/js/app.js",
+    "isEntry": true
+  },
+  "resources/js/components/project.modal.js": {
+    "file": "assets/project.modal-Cl9Grsaf.js",
+    "name": "project.modal",
+    "src": "resources/js/components/project.modal.js",
+    "isEntry": true
+  },
+  "resources/js/layout.page.js": {
+    "file": "assets/layout.page-D1EnFzBV.js",
+    "name": "layout.page",
+    "src": "resources/js/layout.page.js",
+    "isEntry": true
+  },
+  "resources/js/pages/home.page.js": {
+    "file": "assets/home.page-CASP_3Z-.js",
+    "name": "home.page",
+    "src": "resources/js/pages/home.page.js",
     "isEntry": true
   }
 }
