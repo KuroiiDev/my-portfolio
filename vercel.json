@@ -11,6 +11,9 @@
     {
       "src": "/img/(.*)",
       "dest": "public/img/"
+    },{
+      "src": "/images/(.*)",
+      "dest": "images/$1"
     },
     {
       "src": "/build/(.*)",
