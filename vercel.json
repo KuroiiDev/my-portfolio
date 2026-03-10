@@ -1,17 +1,18 @@
 {
-    "version": 2,
-    "framework": null,
-    "buildCommand": "npm install && npm run build",
-    "functions": {
-        "api/index.php": {
-            "runtime": "vercel-php@0.7.3"
-        }
-    },
-     "routes": [
+  "version": 2,
+  "framework": null,
+  "buildCommand": "npm install && npm run build && php artisan config:cache && php artisan route:cache && php artisan view:cache",
+  "functions": {
+    "api/index.php": {
+      "runtime": "vercel-php@0.7.3"
+    }
+  },
+  "routes": [
     {
       "src": "/img/(.*)",
       "dest": "public/img/"
-    },{
+    },
+    {
       "src": "/images/(.*)",
       "dest": "images/$1"
     },
@@ -28,7 +29,6 @@
     "CACHE_STORE": "array",
     "LOG_CHANNEL": "stderr",
     "SESSION_DRIVER": "cookie",
-
     "APP_CONFIG_CACHE": "/tmp/config.php",
     "APP_EVENTS_CACHE": "/tmp/events.php",
     "APP_PACKAGES_CACHE": "/tmp/packages.php",
