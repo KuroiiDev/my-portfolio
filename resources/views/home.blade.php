@@ -3,7 +3,7 @@
 @section('title', 'Home')
 
 @push('prefix')
-    @vite(['resources/css/pages/home.page.css', 'resources/js/pages/home.page.js'])
+    @vite(['resources/css/pages/home.page.css', 'resources/js/pages/home.page.js', 'resources/css/components/particle.effect.css', 'resources/js/components/particle.effect.js'])
 @endpush
 
 @section('content')
@@ -29,7 +29,7 @@
 
                 <p class="hero-desc fade-up">
                     A passionate developer crafting clean, performant web experiences.
-                    Specialized in Backend logics.
+                    Specialized in Backend logic.
                 </p>
 
                 <div class="hero-actions fade-up">

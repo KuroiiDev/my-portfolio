@@ -1,0 +1,155 @@
+/* resources/css/pages/under-construction.page.css */
+
+.uc-section {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 1.5rem;
+}
+
+.uc-wrapper {
+    width: 100%;
+    max-width: 560px;
+}
+
+/* ─── Card ──────────────────────────────────────────── */
+.uc-card {
+    border-radius: 0.875rem;
+    border: 1px solid rgba(124, 58, 237, 0.2);
+    background: rgba(10, 8, 18, 0.9);
+    backdrop-filter: blur(12px);
+    overflow: hidden;
+    box-shadow:
+        0 0 0 1px rgba(196, 181, 253, 0.04),
+        0 24px 64px rgba(0, 0, 0, 0.5),
+        0 0 60px rgba(124, 58, 237, 0.08);
+}
+
+/* ─── Terminal bar ──────────────────────────────────── */
+.terminal-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.75rem 1rem;
+    background: rgba(16, 13, 26, 0.9);
+    border-bottom: 1px solid rgba(124, 58, 237, 0.12);
+}
+
+.terminal-dots {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.dot { width: 10px; height: 10px; border-radius: 50%; }
+.dot-red    { background: #ff5f57; }
+.dot-yellow { background: #febc2e; }
+.dot-green  { background: #28c840; }
+
+.terminal-title {
+    font-size: 0.72rem;
+    color: var(--text-muted);
+    font-family: 'DM Mono', 'Fira Code', monospace;
+}
+
+/* ─── Body ──────────────────────────────────────────── */
+.uc-body {
+    padding: 2rem 1.75rem 2rem;
+    font-family: 'DM Mono', 'Fira Code', monospace;
+    font-size: 0.82rem;
+}
+
+.uc-line {
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+}
+
+.uc-output {
+    padding-left: 1.25rem;
+    line-height: 1.7;
+}
+
+/* ─── Colors ────────────────────────────────────────── */
+.t-prompt { color: var(--accent-soft); }
+.t-cmd    { color: var(--text-primary); }
+.t-lilac  { color: var(--accent-lilac); }
+.t-soft   { color: var(--accent-soft); }
+.t-muted  { color: var(--text-muted); font-size: 0.78rem; }
+.t-green  { color: #28c840; }
+.t-warn   { color: #febc2e; }
+
+/* ─── Animated dots ─────────────────────────────────── */
+.t-dots::after {
+    content: '';
+    animation: dots 1.5s steps(4, end) infinite;
+}
+
+@keyframes dots {
+    0%   { content: ''; }
+    25%  { content: '.'; }
+    50%  { content: '..'; }
+    75%  { content: '...'; }
+    100% { content: ''; }
+}
+
+/* ─── Progress bar ──────────────────────────────────── */
+.uc-progress-label {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.4rem;
+    font-size: 0.75rem;
+}
+
+.uc-progress-track {
+    width: 100%;
+    height: 4px;
+    background: rgba(124, 58, 237, 0.15);
+    border-radius: 999px;
+    overflow: hidden;
+}
+
+.uc-progress-bar {
+    height: 100%;
+    width: 0%;
+    border-radius: 999px;
+    background: linear-gradient(90deg, var(--accent-purple), var(--accent-lilac));
+    box-shadow: 0 0 10px rgba(196, 181, 253, 0.5);
+    transition: width 0.1s linear;
+}
+
+/* ─── Back link ─────────────────────────────────────── */
+.uc-back-link {
+    color: var(--accent-lilac);
+    text-decoration: none;
+    font-size: 0.8rem;
+    transition: text-shadow 0.2s ease;
+}
+
+.uc-back-link:hover {
+    text-shadow: 0 0 10px rgba(196, 181, 253, 0.7);
+}
+
+/* ─── Cursor ────────────────────────────────────────── */
+.typed-cursor {
+    display: inline-block;
+    width: 2px;
+    height: 1.1em;
+    background: var(--accent-lilac);
+    margin-left: 2px;
+    vertical-align: middle;
+    animation: blink 1s step-end infinite;
+    box-shadow: 0 0 8px rgba(196, 181, 253, 0.8);
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50%       { opacity: 0; }
+}
+
+.mt-1 { margin-top: 0.25rem; }
+.mt-2 { margin-top: 0.5rem; }
+.mt-3 { margin-top: 0.75rem; }
+.mt-4 { margin-top: 1.25rem; }
+.ml-1 { margin-left: 0.25rem; }

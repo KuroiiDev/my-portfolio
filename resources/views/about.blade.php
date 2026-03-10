@@ -3,10 +3,12 @@
 @section('title', 'About')
 
 @push('prefix')
-    @vite('resources/css/pages/about.page.css')
+    @vite(['resources/css/pages/about.page.css', 'resources/css/components/particle.effect.css', 'resources/js/components/particle.effect.js'])
 @endpush
 
 @section('content')
+
+    <canvas class="hero-canvas" id="particleCanvas"></canvas>
 
     <section class="about-hero">
         <div class="container about-hero-content">
@@ -22,7 +24,7 @@
                 </p>
                 <p class="about-desc" style="margin-top: 1rem">
                     When I'm not coding, I'm probably exploring new tech, grinding side projects,
-                    or figuring out how to make things faster and cleaner.
+                    or even some little gaming sessions to unwind.
                 </p>
 
                 <div class="about-meta">

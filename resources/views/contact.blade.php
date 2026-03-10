@@ -3,10 +3,12 @@
 @section('title', 'Contact')
 
 @push('prefix')
-    @vite(['resources/css/pages/contact.page.css', 'resources/js/pages/contact.page.js'])
+    @vite(['resources/css/pages/contact.page.css', 'resources/js/pages/contact.page.js', 'resources/css/components/particle.effect.css', 'resources/js/components/particle.effect.js'])
 @endpush
 
 @section('content')
+
+    <canvas class="hero-canvas" id="particleCanvas"></canvas>
 
     <section class="contact-section">
         <div class="container">
@@ -92,13 +94,13 @@
                                 </div>
                                 <div class="terminal-output" style="margin-top: 0.5rem">
                                     <span class="t-green">✓ </span>
-                                    <span class="t-lilac">Message sent successfully!</span>
+                                    <span class="t-lilac">Feature Under Development</span>
                                 </div>
                                 <div class="terminal-output">
-                                    <span class="t-muted">I'll get back to you as soon as possible.</span>
+                                    <span class="t-muted">I'll finish it for you as soon as possible.</span>
                                 </div>
-                                <button class="btn-reset" onclick="resetForm()">
-                                    Send another →
+                                <button class="btn-reset" id="btnReset">
+                                    Reset Form →
                                 </button>
                             </div>
 

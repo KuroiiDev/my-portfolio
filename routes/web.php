@@ -12,5 +12,6 @@ Route::get('/projects', [ProjectController::class, 'index'])->name('projects');
 Route::get('/about', [AboutController::class, 'index'])->name('about');
 Route::get('/contact', [ContactController::class, 'index'])->name('contact');
 Route::get('/cv', function () {
-    return response()->file(public_path('cv.pdf'));
+    // return response()->file(public_path('cv.pdf'));
+    return view('developing');
 })->name('cv');

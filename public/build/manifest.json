@@ -1,11 +1,20 @@
 {
   "resources/css/app.css": {
-    "file": "assets/app-BLBGL8f2.css",
+    "file": "assets/app-Dm_QhR-8.css",
     "src": "resources/css/app.css",
     "isEntry": true,
     "name": "app",
     "names": [
       "app.css"
+    ]
+  },
+  "resources/css/components/particle.effect.css": {
+    "file": "assets/particle-CjUhzKHT.css",
+    "src": "resources/css/components/particle.effect.css",
+    "isEntry": true,
+    "name": "particle.effect",
+    "names": [
+      "particle.css"
     ]
   },
   "resources/css/components/project.modal.css": {
@@ -44,8 +53,17 @@
       "contact.css"
     ]
   },
+  "resources/css/pages/developing.page.css": {
+    "file": "assets/developing-DyjY-_a_.css",
+    "src": "resources/css/pages/developing.page.css",
+    "isEntry": true,
+    "name": "developing.page",
+    "names": [
+      "developing.css"
+    ]
+  },
   "resources/css/pages/home.page.css": {
-    "file": "assets/home-DCWTz0q6.css",
+    "file": "assets/home-DVPduPY_.css",
     "src": "resources/css/pages/home.page.css",
     "isEntry": true,
     "name": "home.page",
@@ -68,6 +86,12 @@
     "src": "resources/js/app.js",
     "isEntry": true
   },
+  "resources/js/components/particle.effect.js": {
+    "file": "assets/particle.effect-Cfp1a4lL.js",
+    "name": "particle.effect",
+    "src": "resources/js/components/particle.effect.js",
+    "isEntry": true
+  },
   "resources/js/components/project.modal.js": {
     "file": "assets/project.modal-Cl9Grsaf.js",
     "name": "project.modal",
@@ -81,7 +105,7 @@
     "isEntry": true
   },
   "resources/js/pages/home.page.js": {
-    "file": "assets/home.page-CASP_3Z-.js",
+    "file": "assets/home.page-CFomA41e.js",
     "name": "home.page",
     "src": "resources/js/pages/home.page.js",
     "isEntry": true

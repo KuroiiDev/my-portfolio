@@ -1,0 +1,1 @@
+const a=["Full Stack Apps.","Clean Interfaces.","Laravel APIs.","things that matter."];let s=0,t=0,e=!1;const c=document.getElementById("typedText");function r(){const n=a[s];c.textContent=e?n.substring(0,t--):n.substring(0,t++);let l=e?40:80;!e&&t===n.length+1?(l=1800,e=!0):e&&t===0&&(e=!1,s=(s+1)%a.length,l=400),setTimeout(r,l)}r();

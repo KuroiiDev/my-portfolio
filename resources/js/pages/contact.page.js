@@ -13,7 +13,7 @@ document.getElementById('contactForm').addEventListener('submit', function (e) {
     }, 1200);
 });
 
-function resetForm() {
+document.getElementById('btnReset').addEventListener('click', function () {
     document.getElementById('contactForm').reset();
     document.getElementById('contactForm').style.display = 'block';
     document.getElementById('formSuccess').style.display = 'none';
@@ -22,4 +22,4 @@ function resetForm() {
     const text = document.getElementById('submitText');
     btn.disabled = false;
     text.textContent = 'Send Message';
-}
+});
