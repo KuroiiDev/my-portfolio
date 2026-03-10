@@ -1,6 +1,6 @@
 {
   "resources/css/app.css": {
-    "file": "assets/app-Dm_QhR-8.css",
+    "file": "assets/app-CkR03Vh-.css",
     "src": "resources/css/app.css",
     "isEntry": true,
     "name": "app",
@@ -102,6 +102,12 @@
     "file": "assets/layout.page-D1EnFzBV.js",
     "name": "layout.page",
     "src": "resources/js/layout.page.js",
+    "isEntry": true
+  },
+  "resources/js/pages/contact.page.js": {
+    "file": "assets/contact.page-ySYzjSRC.js",
+    "name": "contact.page",
+    "src": "resources/js/pages/contact.page.js",
     "isEntry": true
   },
   "resources/js/pages/home.page.js": {

@@ -18,6 +18,7 @@ export default defineConfig({
                 'resources/js/app.js',
                 'resources/js/layout.page.js',
                 'resources/js/pages/home.page.js',
+                'resources/js/pages/contact.page.js',
                 'resources/js/components/project.modal.js',
                 'resources/js/components/particle.effect.js',
             ],
