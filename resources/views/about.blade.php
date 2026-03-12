@@ -86,14 +86,14 @@
                             @foreach($categorySkills as $skill)
                                 <div class="skill-item">
                                     <div class="skill-item-top">
-                                        <span class="skill-name">{{ $skill->name }}</span>
-                                        @if($skill->level)
-                                            <span class="skill-level">{{ $skill->level }}%</span>
+                                        <span class="skill-name">{{ $skill['name'] }}</span>
+                                        @if($skill['level'])
+                                            <span class="skill-level">{{ $skill['level'] }}%</span>
                                         @endif
                                     </div>
-                                    @if($skill->level)
+                                    @if($skill['level'])
                                         <div class="skill-bar">
-                                            <div class="skill-bar-fill" style="width: {{ $skill->level }}%"></div>
+                                            <div class="skill-bar-fill" style="width: {{ $skill['level'] }}%"></div>
                                         </div>
                                     @endif
                                 </div>
@@ -115,28 +115,28 @@
                     <div class="info-card">
                         <div class="info-card-header">
                             <div>
-                                <h3 class="info-card-title">{{ $exp->role }}</h3>
-                                <p class="info-card-sub">{{ $exp->company }}</p>
+                                <h3 class="info-card-title">{{ $exp['role'] }}</h3>
+                                <p class="info-card-sub">{{ $exp['company'] }}</p>
                             </div>
                             <div class="info-card-right">
-                                <span class="badge badge-type">{{ $exp->type }}</span>
+                                <span class="badge badge-type">{{ $exp['type'] }}</span>
                                 <span class="info-card-date">
-                                    {{ $exp->start_date->format('M Y') }} —
-                                    {{ $exp->is_current ? 'Present' : $exp->end_date->format('M Y') }}
+                                    {{ $exp['start_date'] }} —
+                                    {{ $exp['is_current'] ? 'Present' : $exp['end_date'] }}
                                 </span>
                             </div>
                         </div>
 
-                        @if($exp->description)
-                            <p class="info-card-desc">{{ $exp->description }}</p>
+                        @if($exp['description'])
+                            <p class="info-card-desc">{{ $exp['description'] }}</p>
                         @endif
 
-                        @if($exp->projects->count())
+                        @if($exp['projects'])
                             <div class="info-card-projects">
                                 <span class="t-prompt" style="font-size:0.75rem">❯</span>
                                 <span class="info-card-projects-label">Projects:</span>
-                                @foreach($exp->projects as $project)
-                                    <span class="tag">{{ $project->title }}</span>
+                                @foreach($exp['projects'] as $project)
+                                    <span class="tag">{{ $project['title'] }}</span>
                                 @endforeach
                             </div>
                         @endif
@@ -158,19 +158,19 @@
                     <div class="info-card">
                         <div class="info-card-header">
                             <div>
-                                <h3 class="info-card-title">{{ $edu->school }}</h3>
-                                <p class="info-card-sub">{{ $edu->major }}</p>
+                                <h3 class="info-card-title">{{ $edu['school'] }}</h3>
+                                <p class="info-card-sub">{{ $edu['major'] }}</p>
                             </div>
                             <div class="info-card-right">
-                                <span class="badge badge-degree">{{ $edu->degree }}</span>
+                                <span class="badge badge-degree">{{ $edu['degree'] }}</span>
                                 <span class="info-card-date">
-                                    {{ $edu->start_year }} —
-                                    {{ $edu->end_year ?? 'Present' }}
+                                    {{ $edu['start_year'] }} —
+                                    {{ $edu['end_year'] ?? 'Present' }}
                                 </span>
                             </div>
                         </div>
-                        @if($edu->description)
-                            <p class="info-card-desc">{{ $edu->description }}</p>
+                        @if($edu['description'])
+                            <p class="info-card-desc">{{ $edu['description'] }}</p>
                         @endif
                     </div>
                 @empty
@@ -190,12 +190,12 @@
                     <div class="cert-card">
                         <div class="cert-icon">🏅</div>
                         <div class="cert-body">
-                            <h4 class="cert-title">{{ $cert->title }}</h4>
-                            <p class="cert-issuer">{{ $cert->issuer }}</p>
+                            <h4 class="cert-title">{{ $cert['title'] }}</h4>
+                            <p class="cert-issuer">{{ $cert['issuer'] }}</p>
                             <div class="cert-footer">
-                                <span class="cert-date">{{ $cert->issued_date->format('M Y') }}</span>
-                                @if($cert->credential_url)
-                                    <a href="{{ $cert->credential_url }}" target="_blank" class="cert-link">
+                                <span class="cert-date">{{ $cert['issued_date'] }}</span>
+                                @if($cert['credential_url'])
+                                    <a href="{{ $cert['credential_url'] }}" target="_blank" class="cert-link">
                                         Verify ↗
                                     </a>
                                 @endif

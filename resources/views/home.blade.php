@@ -135,10 +135,10 @@
             <div class="skills-row">
                 @foreach($skills as $skill)
                     <span class="skill-pill">
-                        @if($skill->icon)
-                            <img src="{{ asset('storage/' . $skill->icon) }}" width="14" height="14" alt="" />
+                        @if($skill['icon'])
+                            <img src="{{ asset('storage/' . $skill['icon']) }}" width="14" height="14" alt="" />
                         @endif
-                        {{ $skill->name }}
+                        {{ $skill['name'] }}
                     </span>
                 @endforeach
             </div>
@@ -150,7 +150,7 @@
             <p class="section-label">Selected Work</p>
             <div class="flex items-end justify-between flex-wrap gap-4">
                 <h2 class="section-title">Featured <span>Projects</span></h2>
-                <a href="#projects" class="btn-secondary" style="margin-bottom:1rem">
+                <a href="{{ route('projects') }}" class="btn-secondary" style="margin-bottom:1rem">
                     All Projects
                     <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
                         <path d="M5 12h14M12 5l7 7-7 7" />
@@ -162,18 +162,18 @@
                 @forelse($featuredProjects as $project)
                     <a class="project-card">
                         <div class="project-thumb">
-                            @if($project->image)
-                                <img src="{{ asset('images/projects/' . $project->image) }}" alt="{{ $project->title }}" />
+                            @if($project['image'])
+                                <img src="{{ asset('images/projects/' . $project['image']) }}" alt="{{ $project['title'] }}" />
                             @else
                                 <div class="project-thumb-placeholder">⬡</div>
                             @endif
                         </div>
                         <div class="project-body">
-                            <h3 class="project-title">{{ $project->title }}</h3>
-                            <p class="project-desc">{{ Str::limit($project->description, 100) }}</p>
+                            <h3 class="project-title">{{ $project['title'] }}</h3>
+                            <p class="project-desc">{{ Str::limit($project['description'], 100) }}</p>
                             <div class="project-tags">
-                                @foreach($project->techstacks->take(4) as $tech)
-                                    <span class="tag">{{ $tech->name }}</span>
+                                @foreach($project['techstacks'] as $tech)
+                                    <span class="tag">{{ $tech['name'] }}</span>
                                 @endforeach
                             </div>
                         </div>

@@ -2,17 +2,16 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Project;
-use App\Models\Techstack;
+use App\Data\Project;
+use App\Data\Techstack;
 
 class ProjectController extends Controller
 {
     public function index()
     {
-        $projects = Project::with('techstacks')->latest()->get();
-        $techstacks = Techstack::orderBy('name')->get();
+        $projects = Project::withTechstacks();
+        $techstacks = Techstack::all();
 
         return view('project', compact('projects', 'techstacks'));
     }
 }
-
